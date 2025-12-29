@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Receitas, natal, cozinha">
-    <meta name="author" content="Rivaldo Maurinho Luis">
-    <meta name="description" content="Receitas para o natal">
-    <title>Receitas Natalinas Especiais | Dércio Oscaldo</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['"Lato"', 'sans-serif'],
-            },
-            colors: {
-              christmas: {
-                red: '#b91c1c',
-                darkRed: '#991b1b',
-                green: '#064e3b',
-                gold: '#fbbf24',
-                cream: '#fffbeb',
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Receitas, natal, cozinha">
+  <meta name="author" content="Rivaldo Maurinho Luis">
+  <meta name="description" content="Receitas para o natal">
+  <title>Receitas Natalinas Especiais | Dércio Oscaldo</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Lato"', 'sans-serif'],
+          },
+          colors: {
+            christmas: {
+              red: '#b91c1c',
+              darkRed: '#991b1b',
+              green: '#064e3b',
+              gold: '#fbbf24',
+              cream: '#fffbeb',
             }
           }
         }
       }
-    </script>
-    <style>
-      /* Smooth scrolling for anchor links */
-      html {
-        scroll-behavior: smooth;
-      }
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #991b1b;
-        border-radius: 5px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #7f1d1d;
-      }
-      
-      /* 3D Effects */
-      .perspective-1000 {
-        perspective: 1000px;
-      }
-      .rotate-y-minus-5 {
-        transform: rotateY(-5deg);
-      }
-    </style>
+    }
+  </script>
+  <style>
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #991b1b;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7f1d1d;
+    }
+
+    /* 3D Effects */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+
+    .rotate-y-minus-5 {
+      transform: rotateY(-5deg);
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -79,341 +87,349 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-stone-50 text-stone-800 antialiased font-sans">
-    
-    <!-- Hero Section -->
-    <header class="relative w-full bg-gradient-to-b from-christmas-green to-emerald-900 text-white overflow-hidden">
-      <!-- Decorative background elements -->
-      <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <div class="absolute top-10 left-10 text-6xl">❄</div>
-        <div class="absolute top-20 right-20 text-4xl">❄</div>
-        <div class="absolute bottom-20 left-1/4 text-5xl">❄</div>
-        <div class="absolute top-1/2 right-10 text-3xl">❄</div>
-      </div>
 
-      <nav class="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center">
-        
-        <a 
-            href="#comprar" 
-            class="hidden sm:block px-6 py-2 border border-christmas-gold text-christmas-gold hover:bg-christmas-gold hover:text-christmas-green transition-colors rounded-full text-sm font-bold uppercase tracking-wide"
-        >
-          Garantir E-book
-        </a>
-      </nav>
+<body class="bg-stone-50 text-stone-800 antialiased font-sans">
 
-      <div class="relative z-10 container mx-auto px-6 py-12 md:py-24 text-center">
-        <div class="flex justify-center mb-4 space-x-2">
-            <!-- Stars -->
-            <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse" style="animation-delay: 0.2s"></i>
-            <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse" style="animation-delay: 0.4s"></i>
-            <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse" style="animation-delay: 0.6s"></i>
-            <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse" style="animation-delay: 0.8s"></i>
-            <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse" style="animation-delay: 1.0s"></i>
-        </div>
-        
-        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
-          Receitas Natalinas <span class="text-christmas-gold italic">Especiais</span>
-        </h1>
-        
-        <p class="font-sans text-lg md:text-xl lg:text-2xl text-stone-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-          Um e-book completo com receitas tradicionais e modernas para transformar a sua ceia de Natal em um momento inesquecível.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://pay.hotmart.com/G102940544J"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-full sm:w-auto px-8 py-4 bg-christmas-red hover:bg-christmas-darkRed text-white font-bold rounded-lg shadow-xl shadow-red-900/50 transform hover:-translate-y-1 transition-all duration-300 text-lg uppercase tracking-wide"
-          >
-            Comprar Agora
-          </a>
-          <a
-            href="#detalhes"
-            class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-medium rounded-lg transition-colors duration-300"
-          >
-            Saber Mais
-          </a>
-        </div>
-      </div>
-
-      <div class="absolute bottom-4 left-0 w-full flex justify-center animate-bounce">
-        <i data-lucide="chevron-down" class="text-white/50 w-8 h-8"></i>
-      </div>
-      
-      <!-- Wave divider -->
-      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-        <svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-stone-50"></path>
-        </svg>
-      </div>
-    </header>
-
-    <!-- Features Section -->
-    <section id="detalhes" class="py-20 bg-stone-50">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <span class="text-christmas-red font-bold uppercase tracking-widest text-sm mb-2 block">O que você vai encontrar</span>
-          <h2 class="font-serif text-3xl md:text-4xl font-bold text-christmas-green mb-4">
-            Um Menu Completo para sua Família
-          </h2>
-          <div class="w-24 h-1 bg-christmas-gold mx-auto"></div>
-        </div>
-
-        <!-- Categories Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          
-          <!-- Item 1 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
-              <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
-                <i data-lucide="utensils" class="text-christmas-red group-hover:text-white"></i>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Entradas</h3>
-              <p class="text-gray-600 leading-relaxed">Comece a ceia encantando seus convidados.</p>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
-              <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
-                <i data-lucide="gift" class="text-christmas-red group-hover:text-white"></i>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Pratos Principais</h3>
-              <p class="text-gray-600 leading-relaxed">O destaque da noite com sabores inesquecíveis.</p>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
-              <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
-                <i data-lucide="star" class="text-christmas-red group-hover:text-white"></i>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Sobremesas</h3>
-              <p class="text-gray-600 leading-relaxed">Doces tradicionais com um toque especial.</p>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
-              <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
-                <i data-lucide="book-open" class="text-christmas-red group-hover:text-white"></i>
-              </div>
-              <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Bebidas Natalinas</h3>
-              <p class="text-gray-600 leading-relaxed">Drinks e opções refrescantes para o verão brasileiro.</p>
-          </div>
-
-        </div>
-
-        <!-- Highlights Section -->
-        <div class="bg-christmas-cream rounded-3xl p-8 md:p-12 shadow-inner border border-amber-100">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 class="font-serif text-2xl md:text-3xl font-bold text-christmas-green mb-6">
-                Por que este e-book é para você?
-              </h3>
-              <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
-                    <span class="text-gray-700 text-lg">Receitas fáceis e práticas</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
-                    <span class="text-gray-700 text-lg">Ingredientes acessíveis no Brasil</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
-                    <span class="text-gray-700 text-lg">Passo a passo detalhado e ilustrado</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
-                    <span class="text-gray-700 text-lg">Dicas de decoração de pratos</span>
-                </li>
-              </ul>
-            </div>
-            <div class="relative h-64 md:h-full min-h-[300px] rounded-2xl overflow-hidden shadow-lg">
-               <!-- Decorative placeholder for a cooking image -->
-               <img 
-                 src="./Imagens/assent1.png" alt="Cabelo" width="300" height="380" 
-                 alt="Preparando ceia de natal" 
-                 class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-               />
-               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                 <p class="text-white font-medium italic">"Receitas testadas e aprovadas para o paladar brasileiro."</p>
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9777648684820776"
-     crossorigin="anonymous"></script>
-<!-- Receitas natalinas -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9777648684820776"
-     data-ad-slot="9541261675"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  <!-- Hero Section -->
+  <header class="relative w-full bg-gradient-to-b from-christmas-green to-emerald-900 text-white overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+      <div class="absolute top-10 left-10 text-6xl">❄</div>
+      <div class="absolute top-20 right-20 text-4xl">❄</div>
+      <div class="absolute bottom-20 left-1/4 text-5xl">❄</div>
+      <div class="absolute top-1/2 right-10 text-3xl">❄</div>
     </div>
 
-    <!-- Preview Section -->
-    <section class="py-20 bg-white relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#064e3b 1px, transparent 1px); background-size: 20px 20px;"></div>
-        
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
-                
-                <!-- 3D Book Mockup -->
-                <div class="relative group perspective-1000 w-full max-w-sm mx-auto lg:mx-0">
-                    <div class="relative w-full aspect-[3/4] rounded-r-2xl shadow-2xl transition-transform duration-500 transform group-hover:rotate-y-minus-5 bg-gradient-to-br from-red-600 to-red-800 flex flex-col items-center justify-between p-8 text-center border-l-8 border-red-900 overflow-hidden">
-                        
-                        <!-- Book Spine Shadow -->
-                        <div class="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/20 to-transparent z-20"></div>
-                        
-                        <!-- Golden Border Frame -->
-                        <div class="absolute inset-4 border-2 border-christmas-gold/50 rounded-lg pointer-events-none"></div>
+    <nav class="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center">
 
-                        <div class="mt-8">
-                            <h3 class="text-christmas-gold text-lg font-serif uppercase tracking-widest mb-2">E-book Exclusivo</h3>
-                            <h2 class="text-white text-4xl font-serif font-bold leading-tight">Receitas<br/>Natalinas<br/>Especiais</h2>
-                        </div>
+      <a href="#comprar"
+        class="hidden sm:block px-6 py-2 border border-christmas-gold text-christmas-gold hover:bg-christmas-gold hover:text-christmas-green transition-colors rounded-full text-sm font-bold uppercase tracking-wide">
+        Garantir E-book
+      </a>
+    </nav>
 
-                        <div class="my-8">
-                             <div class="w-24 h-24 bg-white/10 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
-                                <span class="text-4xl">🎄</span>
-                             </div>
-                        </div>
+    <div class="relative z-10 container mx-auto px-6 py-12 md:py-24 text-center">
+      <div class="flex justify-center mb-4 space-x-2">
+        <!-- Stars -->
+        <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse"
+          style="animation-delay: 0.2s"></i>
+        <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse"
+          style="animation-delay: 0.4s"></i>
+        <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse"
+          style="animation-delay: 0.6s"></i>
+        <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse"
+          style="animation-delay: 0.8s"></i>
+        <i data-lucide="star" class="text-christmas-gold fill-current w-5 h-5 animate-pulse"
+          style="animation-delay: 1.0s"></i>
+      </div>
 
-                        <div class="mb-8">
-                            <p class="text-white/80 font-serif italic">Por Dércio Osvaldo</p>
-                        </div>
+      <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+        Receitas Natalinas <span class="text-christmas-gold italic">Especiais</span>
+      </h1>
 
-                        <!-- Gloss effect -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
-                    </div>
-                    
-                    <!-- Shadow underneath -->
-                    <div class="absolute -bottom-10 left-4 right-4 h-8 bg-black/20 blur-xl rounded-[50%]"></div>
-                </div>
+      <p
+        class="font-sans text-lg md:text-xl lg:text-2xl text-stone-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+        Um e-book completo com receitas tradicionais e modernas para transformar a sua ceia de Natal em um momento
+        inesquecível.
+      </p>
 
-                <!-- Text Content -->
-                <div class="text-center lg:text-left max-w-lg">
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                        Mais de 20 receitas exclusivas em um único PDF
-                    </h2>
-                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        Chega de procurar receitas na internet que nunca dão certo. Tenha em mãos um guia confiável, com fotos ilustrativas e segredos de chef para impressionar a todos.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
-                            <span class="block text-2xl font-bold text-christmas-red">100%</span>
-                            <span class="text-sm text-gray-600">Digital</span>
-                        </div>
-                        <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
-                            <span class="block text-2xl font-bold text-christmas-red">Imediato</span>
-                            <span class="text-sm text-gray-600">Download</span>
-                        </div>
-                         <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
-                            <span class="block text-2xl font-bold text-christmas-red">Alta</span>
-                            <span class="text-sm text-gray-600">Qualidade</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://pay.hotmart.com/G102940544J" target="_blank" rel="noopener noreferrer"
+          class="w-full sm:w-auto px-8 py-4 bg-christmas-red hover:bg-christmas-darkRed text-white font-bold rounded-lg shadow-xl shadow-red-900/50 transform hover:-translate-y-1 transition-all duration-300 text-lg uppercase tracking-wide">
+          Comprar Agora
+        </a>
+        <a href="#detalhes"
+          class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-medium rounded-lg transition-colors duration-300">
+          Saber Mais
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-4 left-0 w-full flex justify-center animate-bounce">
+      <i data-lucide="chevron-down" class="text-white/50 w-8 h-8"></i>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+      <svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="fill-stone-50"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="detalhes" class="py-20 bg-stone-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-christmas-red font-bold uppercase tracking-widest text-sm mb-2 block">O que você vai
+          encontrar</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-christmas-green mb-4">
+          Um Menu Completo para sua Família
+        </h2>
+        <div class="w-24 h-1 bg-christmas-gold mx-auto"></div>
+      </div>
+
+      <!-- Categories Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+
+        <!-- Item 1 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
+          <div
+            class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
+            <i data-lucide="utensils" class="text-christmas-red group-hover:text-white"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Entradas</h3>
+          <p class="text-gray-600 leading-relaxed">Comece a ceia encantando seus convidados.</p>
         </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section id="comprar" class="py-20 bg-christmas-green text-white relative">
-      <div class="container mx-auto px-6 text-center">
-        
-        <div class="max-w-3xl mx-auto bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10">
-            <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-christmas-gold">
-              Garanta seu Natal Perfeito
-            </h2>
-            <p class="text-lg md:text-xl text-stone-200 mb-10">
-              Não deixe para a última hora. Comece a planejar sua ceia hoje mesmo com as melhores receitas.
-            </p>
+        <!-- Item 2 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
+          <div
+            class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
+            <i data-lucide="gift" class="text-christmas-red group-hover:text-white"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Pratos Principais</h3>
+          <p class="text-gray-600 leading-relaxed">O destaque da noite com sabores inesquecíveis.</p>
+        </div>
 
-            <a
-              href="https://pay.hotmart.com/G102940544J"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block w-full md:w-auto px-12 py-5 bg-christmas-red hover:bg-red-600 text-white font-bold rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 text-xl uppercase tracking-wider mb-8 border-b-4 border-red-900"
-            >
-              Comprar Agora
-            </a>
+        <!-- Item 3 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
+          <div
+            class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
+            <i data-lucide="star" class="text-christmas-red group-hover:text-white"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Sobremesas</h3>
+          <p class="text-gray-600 leading-relaxed">Doces tradicionais com um toque especial.</p>
+        </div>
 
-            <div class="flex flex-col items-center justify-center gap-4 text-sm text-stone-300 mb-8">
-              <div class="flex items-center gap-2">
-                <i data-lucide="lock" class="w-4 h-4"></i>
-                <span>Pagamento 100% Seguro</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                <span>Acesso imediato ao PDF após confirmação</span>
-              </div>
+        <!-- Item 4 -->
+        <div
+          class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-christmas-red group">
+          <div
+            class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-christmas-red transition-colors duration-300">
+            <i data-lucide="book-open" class="text-christmas-red group-hover:text-white"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Bebidas Natalinas</h3>
+          <p class="text-gray-600 leading-relaxed">Drinks e opções refrescantes para o verão brasileiro.</p>
+        </div>
+
+      </div>
+
+      <!-- Highlights Section -->
+      <div class="bg-christmas-cream rounded-3xl p-8 md:p-12 shadow-inner border border-amber-100">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-christmas-green mb-6">
+              Por que este e-book é para você?
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-700 text-lg">Receitas fáceis e práticas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-700 text-lg">Ingredientes acessíveis no Brasil</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-700 text-lg">Passo a passo detalhado e ilustrado</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle-2" class="text-christmas-green w-6 h-6 flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-700 text-lg">Dicas de decoração de pratos</span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative h-64 md:h-full min-h-[300px] rounded-2xl overflow-hidden shadow-lg">
+            <!-- Decorative placeholder for a cooking image -->
+            <img src="./Imagens/assent1.png" alt="Cabelo" width="300" height="380" alt="Preparando ceia de natal"
+              class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <p class="text-white font-medium italic">"Receitas testadas e aprovadas para o paladar brasileiro."</p>
             </div>
-
-            <div class="pt-8 border-t border-white/10">
-              <p class="text-sm mb-4 font-medium uppercase tracking-wide text-christmas-gold">Aceitamos</p>
-              <div class="flex justify-center items-center gap-6 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
-                <!-- Simulated Payment Icons -->
-                <div class="flex flex-col items-center gap-1">
-                    <i data-lucide="credit-card" class="w-8 h-8"></i>
-                    <span class="text-xs">Crédito</span>
-                </div>
-                 <div class="flex flex-col items-center gap-1">
-                    <span class="font-bold text-xl italic font-serif">P</span>
-                    <span class="text-xs">PayPal</span>
-                </div>
-                 <div class="flex flex-col items-center gap-1">
-                     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,3H21V21H3V3M5,5V19H19V5H5Z"/></svg>
-                    <span class="text-xs">Outros</span>
-                </div>
-              </div>
-            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-stone-900 text-stone-400 py-8">
-      <div class="container mx-auto px-6 text-center">
-        <p class="font-sans text-sm">
-          &copy; 2025 – GeoPixel. Todos os direitos reservados.
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9777648684820776"
+    crossorigin="anonymous"></script>
+  <!-- Receitas natalinas -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9777648684820776" data-ad-slot="9541261675"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- Preview Section -->
+  <section class="py-20 bg-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5"
+      style="background-image: radial-gradient(#064e3b 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+
+        <!-- 3D Book Mockup -->
+        <div class="relative group perspective-1000 w-full max-w-sm mx-auto lg:mx-0">
+          <div
+            class="relative w-full aspect-[3/4] rounded-r-2xl shadow-2xl transition-transform duration-500 transform group-hover:rotate-y-minus-5 bg-gradient-to-br from-red-600 to-red-800 flex flex-col items-center justify-between p-8 text-center border-l-8 border-red-900 overflow-hidden">
+
+            <!-- Book Spine Shadow -->
+            <div class="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/20 to-transparent z-20"></div>
+
+            <!-- Golden Border Frame -->
+            <div class="absolute inset-4 border-2 border-christmas-gold/50 rounded-lg pointer-events-none"></div>
+
+            <div class="mt-8">
+              <h3 class="text-christmas-gold text-lg font-serif uppercase tracking-widest mb-2">E-book Exclusivo</h3>
+              <h2 class="text-white text-4xl font-serif font-bold leading-tight">Receitas<br />Natalinas<br />Especiais
+              </h2>
+            </div>
+
+            <div class="my-8">
+              <div class="w-24 h-24 bg-white/10 rounded-full mx-auto flex items-center justify-center backdrop-blur-sm">
+                <span class="text-4xl">🎄</span>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <p class="text-white/80 font-serif italic">Por Dércio Osvaldo</p>
+            </div>
+
+            <!-- Gloss effect -->
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none">
+            </div>
+          </div>
+
+          <!-- Shadow underneath -->
+          <div class="absolute -bottom-10 left-4 right-4 h-8 bg-black/20 blur-xl rounded-[50%]"></div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-center lg:text-left max-w-lg">
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Mais de 20 receitas exclusivas em um único PDF
+          </h2>
+          <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+            Chega de procurar receitas na internet que nunca dão certo. Tenha em mãos um guia confiável, com fotos
+            ilustrativas e segredos de chef para impressionar a todos.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
+              <span class="block text-2xl font-bold text-christmas-red">100%</span>
+              <span class="text-sm text-gray-600">Digital</span>
+            </div>
+            <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
+              <span class="block text-2xl font-bold text-christmas-red">Imediato</span>
+              <span class="text-sm text-gray-600">Download</span>
+            </div>
+            <div class="bg-red-50 px-6 py-4 rounded-lg border border-red-100 text-center">
+              <span class="block text-2xl font-bold text-christmas-red">Alta</span>
+              <span class="text-sm text-gray-600">Qualidade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="comprar" class="py-20 bg-christmas-green text-white relative">
+    <div class="container mx-auto px-6 text-center">
+
+      <div class="max-w-3xl mx-auto bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10">
+        <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-christmas-gold">
+          Garanta seu Natal Perfeito
+        </h2>
+        <p class="text-lg md:text-xl text-stone-200 mb-10">
+          Não deixe para a última hora. Comece a planejar sua ceia hoje mesmo com as melhores receitas.
         </p>
-        <div class="mt-4 flex justify-center gap-4 text-xs">
-            <span class="hover:text-white transition-colors cursor-pointer">Termos de Uso</span>
-            <span>|</span>
-            <span class="hover:text-white transition-colors cursor-pointer">Política de Privacidade</span>
+
+        <a href="https://pay.hotmart.com/G102940544J" target="_blank" rel="noopener noreferrer"
+          class="inline-block w-full md:w-auto px-12 py-5 bg-christmas-red hover:bg-red-600 text-white font-bold rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 text-xl uppercase tracking-wider mb-8 border-b-4 border-red-900">
+          Comprar Agora
+        </a>
+
+        <div class="flex flex-col items-center justify-center gap-4 text-sm text-stone-300 mb-8">
+          <div class="flex items-center gap-2">
+            <i data-lucide="lock" class="w-4 h-4"></i>
+            <span>Pagamento 100% Seguro</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>Acesso imediato ao PDF após confirmação</span>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/10">
+          <p class="text-sm mb-4 font-medium uppercase tracking-wide text-christmas-gold">Aceitamos</p>
+          <div
+            class="flex justify-center items-center gap-6 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
+            <!-- Simulated Payment Icons -->
+            <div class="flex flex-col items-center gap-1">
+              <i data-lucide="credit-card" class="w-8 h-8"></i>
+              <span class="text-xs">Crédito</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <span class="font-bold text-xl italic font-serif">P</span>
+              <span class="text-xs">PayPal</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3,3H21V21H3V3M5,5V19H19V5H5Z" />
+              </svg>
+              <span class="text-xs">Outros</span>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Floating WhatsApp -->
-    <a
-      href="https://wa.me/+258845313190?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20PDF%20de%20Receitas%20Natalinas."
-      target="_blank"
-      rel="noopener noreferrer"
-      class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 group"
-      aria-label="Fale conosco no WhatsApp"
-    >
-      <span class="hidden md:block font-semibold text-sm max-w-0 overflow-hidden group-hover:max-w-xs group-hover:pr-2 transition-all duration-500 ease-in-out whitespace-nowrap">
-        Fale Conosco
-      </span>
-      <i data-lucide="message-circle" class="w-7 h-7"></i>
-    </a>
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-400 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p class="font-sans text-sm">
+        &copy; 2025 – GeoPixel. Todos os direitos reservados.
+      </p>
+      <div class="mt-4 flex justify-center gap-4 text-xs">
+        <span class="hover:text-white transition-colors cursor-pointer">Termos de Uso</span>
+        <span>|</span>
+        <span class="hover:text-white transition-colors cursor-pointer">Política de Privacidade</span>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Initialize Icons -->
-    <script>
-      lucide.createIcons();
-    </script>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/+258845313190?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20PDF%20de%20Receitas%20Natalinas."
+    target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 group"
+    aria-label="Fale conosco no WhatsApp">
+    <span
+      class="hidden md:block font-semibold text-sm max-w-0 overflow-hidden group-hover:max-w-xs group-hover:pr-2 transition-all duration-500 ease-in-out whitespace-nowrap">
+      Fale Conosco
+    </span>
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Initialize Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
